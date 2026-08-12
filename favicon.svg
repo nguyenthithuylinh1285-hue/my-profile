@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="20" fill="#2D4A3E"/>
+  <text x="50%" y="58%" font-family="'Playfair Display', serif" font-size="42" font-weight="bold" fill="#FBFBF9" text-anchor="middle" dominant-baseline="middle">TL</text>
+  <circle cx="75" cy="25" r="6" fill="#9E8569"/>
+</svg>
