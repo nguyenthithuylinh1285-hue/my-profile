@@ -435,6 +435,14 @@ strong { font-weight: 600; }
     color: var(--black);
 }
 
+.project-link {
+    transition: color var(--duration-fast);
+}
+
+.project-link:hover {
+    color: var(--rose-500);
+}
+
 .project-role {
     font-size: .78rem;
     font-weight: 600;
@@ -602,6 +610,10 @@ strong { font-weight: 600; }
     font-size: .7rem;
     color: var(--text-muted);
     margin-top: 2px;
+}
+
+.cert-card-mini.col-span-2-mobile {
+    grid-column: span 2;
 }
 
 /* ═══════════════════════════════════
