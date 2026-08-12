@@ -19,255 +19,256 @@
 </head>
 <body>
 
-    <!-- ===== BENTO GRID PORTFOLIO ===== -->
-    <main class="portfolio-container">
+    <!-- Slide Navigation Indicators -->
+    <div class="slide-indicators" id="indicators">
+        <a href="#slide-hero" class="ind-dot active" title="Cover"></a>
+        <a href="#slide-intro" class="ind-dot" title="Introduction"></a>
+        <a href="#slide-about" class="ind-dot" title="About Me"></a>
+        <a href="#slide-project1" class="ind-dot" title="First Project"></a>
+        <a href="#slide-experience" class="ind-dot" title="Experience"></a>
+        <a href="#slide-education" class="ind-dot" title="Education"></a>
+        <a href="#slide-project2" class="ind-dot" title="Second Project"></a>
+        <a href="#slide-skills" class="ind-dot" title="Skills"></a>
+        <a href="#slide-contact" class="ind-dot" title="Contact"></a>
+    </div>
 
-        <!-- ── ROW 1 ── -->
+    <!-- ===== PORTFOLIO CONTAINER (Scroll Snap) ===== -->
+    <div class="slides-wrapper">
 
-        <!-- Card 1: HERO -->
-        <section class="bento-card card-hero" id="hero">
-            <div class="hero-bg-pattern"></div>
-            <div class="hero-content">
-                <p class="hero-eyebrow">Nguyễn Thị Thùy Linh · Business Analyst</p>
-                <h1 class="hero-title">CREATIVE<br><span class="hero-title-outline">PORTFOLIO</span></h1>
-                <p class="hero-tagline">Process & Solution Architecture · AI Workflow Design</p>
-            </div>
-            <div class="hero-image-accent">
-                <img src="cv_photo.png" alt="Nguyễn Thị Thùy Linh" class="hero-float-photo">
+        <!-- SLIDE 1: HERO -->
+        <section class="slide-page" id="slide-hero">
+            <div class="editorial-card card-hero">
+                <div class="hero-bg-pattern"></div>
+                <div class="card-left">
+                    <p class="hero-eyebrow">OLIVIA WILSON &nbsp;·&nbsp; PHOTOGRAPHY</p>
+                    <h1 class="hero-title">CREATIVE<br><span class="hero-title-outline">PORTFOLIO</span></h1>
+                </div>
+                <div class="card-right hero-image-container">
+                    <img src="cv_photo.png" alt="Nguyễn Thị Thùy Linh" class="hero-photo-main">
+                </div>
             </div>
         </section>
 
-        <!-- Card 2: INTRODUCTION -->
-        <section class="bento-card card-intro" id="introduction">
-            <div class="card-photo-top">
-                <img src="cv_photo.png" alt="Profile" class="intro-photo">
-            </div>
-            <div class="card-text-body">
-                <h2 class="section-heading">INTRODUCTION</h2>
-                <p>Cử nhân chuyên ngành <strong>Toán Kinh tế – Phân tích Kinh doanh trong Môi trường số</strong> tại Trường Đại học Thương mại, định hướng trở thành Business Analyst chuyên nghiệp với tư duy hệ thống sắc bén.</p>
-            </div>
-        </section>
-
-        <!-- Card 3: ABOUT ME -->
-        <section class="bento-card card-about" id="about">
-            <h2 class="section-heading">ABOUT ME</h2>
-            <p class="about-text">Thế mạnh cốt lõi nằm ở khả năng <strong>khảo sát thực địa, làm rõ pain points</strong> của Stakeholders, chuẩn hóa luồng nghiệp vụ (BPMN, Flowchart) và chuyển hóa yêu cầu phức tạp thành bộ tài liệu kỹ thuật chuẩn mực. Đặc biệt chủ động ứng dụng <strong>AI Multi-Agent Workflow, HITL</strong> và <strong>AI-assisted Prototyping</strong>.</p>
-            <div class="about-photo-grid">
-                <div class="photo-item photo-main">
-                    <img src="cv_photo.png" alt="Working" class="photo-bw">
+        <!-- SLIDE 2: INTRODUCTION -->
+        <section class="slide-page" id="slide-intro">
+            <div class="editorial-card card-intro-layout">
+                <div class="card-left flex-center bg-blush-darker">
+                    <img src="cv_photo.png" alt="Introduction Photo" class="side-photo">
                 </div>
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        <i class="fa-solid fa-diagram-project"></i>
-                        <span>Process Design</span>
-                    </div>
-                </div>
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        <i class="fa-solid fa-robot"></i>
-                        <span>AI Workflow</span>
+                <div class="card-right text-content">
+                    <h2 class="section-heading">INTRODUCTION</h2>
+                    <div class="editorial-body">
+                        <p>Cử nhân chuyên ngành <strong>Toán Kinh tế – Phân tích Kinh doanh trong Môi trường số</strong> tại Trường Đại học Thương mại, định hướng trở thành Business Analyst chuyên nghiệp với tư duy hệ thống sắc bén và phong cách làm việc chuẩn chỉnh, tỉ mỉ.</p>
+                        <p>Tôi đam mê nghiên cứu cấu trúc nghiệp vụ doanh nghiệp, tối ưu hóa quy trình vận hành và ứng dụng các giải pháp công nghệ tiên tiến để mang lại giá trị thực tiễn cho tổ chức.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ── ROW 2 ── -->
-
-        <!-- Card 4: FIRST PROJECT - OPC Decision Copilot -->
-        <section class="bento-card card-project" id="project1">
-            <div class="project-photo-grid">
-                <div class="photo-item photo-dark">
-                    <i class="fa-solid fa-brain"></i>
-                    <span>AI Multi-Agent</span>
+        <!-- SLIDE 3: ABOUT ME -->
+        <section class="slide-page" id="slide-about">
+            <div class="editorial-card card-about-layout">
+                <div class="card-left text-content">
+                    <h2 class="section-heading">ABOUT ME</h2>
+                    <div class="editorial-body">
+                        <p>Thế mạnh cốt lõi của tôi nằm ở khả năng <strong>khảo sát thực địa, làm rõ pain points</strong> của Stakeholders, chuẩn hóa luồng nghiệp vụ (BPMN, Flowchart) và chuyển hóa yêu cầu phức tạp thành bộ tài liệu kỹ thuật chuẩn mực (BRD, SRS, User Stories, Acceptance Criteria).</p>
+                        <p>Tôi đặc biệt chủ động ứng dụng <strong>AI Multi-Agent Workflow, Human-in-the-Loop (HITL)</strong> và <strong>AI-assisted Prototyping</strong> để tăng tốc độ kiểm thử nghiệp vụ và trực quan hóa giải pháp.</p>
+                    </div>
                 </div>
-                <div class="photo-item photo-dark">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <span>Data Governance</span>
-                </div>
-                <div class="photo-item photo-dark">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <span>Dashboard</span>
-                </div>
-                <div class="photo-item photo-dark">
-                    <i class="fa-solid fa-vial"></i>
-                    <span>UAT E2E</span>
-                </div>
-            </div>
-            <div class="project-info">
-                <h2 class="section-heading-sm">FIRST PROJECT</h2>
-                <h3 class="project-name">OPC Decision Copilot</h3>
-                <p class="project-role">BA · AI Workflow Designer</p>
-                <p>Hệ thống Hỗ trợ Ra Quyết định AI Multi-Agent. Thiết kế BPMN, ERD, DFD, Agent Architecture, Sequence Diagram, Decision Tree. Chuẩn hóa JSON Schema, HITL và Data Masking.</p>
-            </div>
-        </section>
-
-        <!-- Card 5: EXPERIENCE -->
-        <section class="bento-card card-experience" id="experience">
-            <h2 class="section-heading">EXPERIENCE</h2>
-            <div class="exp-timeline">
-                <div class="exp-item">
-                    <span class="exp-company">Viet Culture Media</span>
-                    <span class="exp-date">09/2025 — 06/2026</span>
-                    <p class="exp-role">Business Analyst</p>
-                    <p class="exp-desc">4 dự án: Electronic Library, Restaurant App, Asset Management, E-Learning. Chuẩn hóa BRD, SRS, Wireframes Figma, BPMN.</p>
-                </div>
-                <div class="exp-divider"></div>
-                <div class="exp-item">
-                    <span class="exp-company">AEONSHOP</span>
-                    <span class="exp-date">06/2025 — 09/2025</span>
-                    <p class="exp-role">Chuyên viên Phân tích & Vận hành</p>
-                    <p class="exp-desc">Chuẩn hóa Data Flow Omnichannel O2O, khảo sát điểm nghẽn vận hành, tối ưu trải nghiệm End-User.</p>
-                </div>
-                <div class="exp-divider"></div>
-                <div class="exp-item">
-                    <span class="exp-company">Trà Đá BA & GenZ Làm BA</span>
-                    <span class="exp-date">06/2026 — Hiện tại</span>
-                    <p class="exp-role">Quản trị viên Khối Tri thức</p>
-                    <p class="exp-desc">User Research & Insights cho 150k+ thành viên, biên soạn thư viện tài liệu BA mẫu.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Card 6: EDUCATION -->
-        <section class="bento-card card-education" id="education">
-            <h2 class="section-heading">EDUCATION</h2>
-            <div class="edu-columns">
-                <div class="edu-entry">
-                    <span class="edu-year">2023 — 2027</span>
-                    <h3 class="edu-school">TRƯỜNG ĐẠI HỌC THƯƠNG MẠI</h3>
-                    <p class="edu-degree">Cử nhân Toán Kinh tế — Phân tích Kinh doanh trong Môi trường Số</p>
-                    <p class="edu-gpa"><strong>GPA: 3.3 / 4.0</strong></p>
-                </div>
-                <div class="edu-awards">
-                    <div class="award-item">
-                        <i class="fa-solid fa-trophy"></i>
-                        <div>
-                            <strong>Top 4 MIS Talent 2026</strong>
-                            <span>Case Study Competition – Miền Bắc</span>
+                <div class="card-right flex-center bg-blush-darker">
+                    <div class="about-photo-grid">
+                        <div class="grid-img-wrap grid-large">
+                            <img src="cv_photo.png" alt="Linh" class="photo-bw">
                         </div>
+                        <div class="grid-img-wrap bg-diagonal-stripes"></div>
                     </div>
-                    <div class="award-item">
-                        <i class="fa-solid fa-medal"></i>
-                        <div>
-                            <strong>Giải Ba NCKH Sinh viên</strong>
-                            <span>Cấp Trường ĐH Thương mại</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: FIRST PROJECT -->
+        <section class="slide-page" id="slide-project1">
+            <div class="editorial-card card-project-layout">
+                <div class="card-left flex-center bg-black-overlay">
+                    <div class="project-grid-photos">
+                        <div class="photo-icon-box"><i class="fa-solid fa-brain"></i><span>Multi-Agent</span></div>
+                        <div class="photo-icon-box"><i class="fa-solid fa-shield-halved"></i><span>Governance</span></div>
+                        <div class="photo-icon-box"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span></div>
+                        <div class="photo-icon-box"><i class="fa-solid fa-vial-circle-check"></i><span>UAT E2E</span></div>
+                    </div>
+                </div>
+                <div class="card-right text-content">
+                    <h2 class="section-heading-label">FIRST PROJECT</h2>
+                    <h3 class="project-title">OPC Decision Copilot</h3>
+                    <p class="project-role">BA · AI Workflow Designer</p>
+                    <div class="editorial-body">
+                        <p>Hệ thống Hỗ trợ Ra Quyết định AI Multi-Agent. Xây dựng bộ 6 mô hình kỹ thuật (BPMN, ERD, DFD, Agent Architecture, Sequence, Decision Tree). Thiết kế cơ chế Traceability qua Trace ID.</p>
+                        <p>Đảm bảo Data Governance với JSON Schema Validation Rules, Human-in-the-loop (HITL) và Data Masking bảo mật dữ liệu trước khi gọi LLM. Thiết kế kịch bản Safe Failure tự ngắt/rerun.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: EXPERIENCE -->
+        <section class="slide-page" id="slide-experience">
+            <div class="editorial-card card-experience-layout">
+                <div class="card-full-padding">
+                    <h2 class="section-heading centered-heading">EXPERIENCE</h2>
+                    <div class="horizontal-experience-grid">
+                        <div class="exp-card">
+                            <span class="exp-period">06/2026 — Huyện tại</span>
+                            <h3 class="exp-title">Trà Đá BA & GenZ Làm BA</h3>
+                            <p class="exp-role">Quản trị viên Khối Tri thức & Cộng đồng</p>
+                            <p class="exp-details">User Research & Insights cho 150k+ thành viên. Biên soạn tài liệu nghiệp vụ mẫu (Case Studies, BRDs, APIs).</p>
                         </div>
-                    </div>
-                    <div class="award-item">
-                        <i class="fa-solid fa-award"></i>
-                        <div>
-                            <strong>Học bổng KKHT</strong>
-                            <span>HK1, 2025–2026 · TMU</span>
+                        <div class="exp-card">
+                            <span class="exp-period">09/2025 — 06/2026</span>
+                            <h3 class="exp-title">Viet Culture Media</h3>
+                            <p class="exp-role">Business Analyst</p>
+                            <p class="exp-details">Triển khai 4 dự án (Electronic Library, Restaurant Ordering App, Asset Management, E-Learning). Soạn BRD, SRS, Wireframes Figma.</p>
+                        </div>
+                        <div class="exp-card">
+                            <span class="exp-period">06/2025 — 09/2025</span>
+                            <h3 class="exp-title">AEONSHOP</h3>
+                            <p class="exp-role">Chuyên viên Phân tích & Vận hành</p>
+                            <p class="exp-details">Chuẩn hóa Data Flow Omnichannel O2O trực quan. Phân tích điểm nghẽn vận hành & tối ưu UX góc nhìn End-User.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ── ROW 3 ── -->
-
-        <!-- Card 7: SECOND PROJECT - TrekCompanion -->
-        <section class="bento-card card-project card-project-alt" id="project2">
-            <div class="project-photo-grid project-photo-grid-alt">
-                <div class="photo-item photo-dark">
-                    <i class="fa-solid fa-mountain-sun"></i>
-                    <span>Trekking</span>
-                </div>
-                <div class="photo-item photo-dark">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                    <span>Offline Map</span>
-                </div>
-                <div class="photo-item photo-dark">
-                    <i class="fa-solid fa-kit-medical"></i>
-                    <span>SOS Beacon</span>
-                </div>
-                <div class="photo-item photo-dark">
-                    <i class="fa-solid fa-list-check"></i>
-                    <span>Smart Pack</span>
-                </div>
-            </div>
-            <div class="project-info">
-                <h2 class="section-heading-sm">SECOND PROJECT</h2>
-                <h3 class="project-name">TrekCompanion</h3>
-                <p class="project-role">Project Leader · BA</p>
-                <p>Ứng dụng Hỗ trợ Leo núi & Trekking An toàn. Dẫn dắt khảo sát pain points: mất sóng, lạc đường, thiếu nhu yếu phẩm. Thiết kế User Persona, Figma Wireframes & ERD.</p>
-            </div>
-        </section>
-
-        <!-- Card 8: SKILLS -->
-        <section class="bento-card card-skills" id="skills">
-            <h2 class="section-heading">SKILLS</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-icon-wrap">
-                        <i class="fa-solid fa-diagram-project"></i>
+        <!-- SLIDE 6: EDUCATION -->
+        <section class="slide-page" id="slide-education">
+            <div class="editorial-card card-education-layout">
+                <div class="card-left text-content bg-blush-light">
+                    <h2 class="section-heading">EDUCATION</h2>
+                    <div class="education-block">
+                        <h3 class="edu-university">TRƯỜNG ĐẠI HỌC THƯƠNG MẠI</h3>
+                        <p class="edu-major">Cử nhân Toán Kinh tế — Phân tích Kinh doanh trong Môi trường Số</p>
+                        <p class="edu-meta"><i class="fa-regular fa-calendar"></i> 2023 — 2027 &nbsp;&nbsp;|&nbsp;&nbsp; <i class="fa-solid fa-star"></i> GPA: <strong>3.3 / 4.0</strong></p>
                     </div>
-                    <h3>PROCESS DESIGN</h3>
-                    <p>BPMN 2.0, Flowchart, Swimlane, As-Is/To-Be, DFD, ERD</p>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon-wrap">
-                        <i class="fa-solid fa-file-lines"></i>
+                    <div class="education-awards">
+                        <div class="award-pill"><i class="fa-solid fa-trophy"></i> Top 4 Chung kết MIS Talent 2026</div>
+                        <div class="award-pill"><i class="fa-solid fa-medal"></i> Giải Ba NCKH Cấp Trường 2025</div>
+                        <div class="award-pill"><i class="fa-solid fa-award"></i> Học bổng KKHT Học kỳ 1 (2025-2026)</div>
                     </div>
-                    <h3>DOCUMENTATION</h3>
-                    <p>BRD, SRS, FRD, User Stories, Acceptance Criteria, UML</p>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-icon-wrap">
-                        <i class="fa-brands fa-figma"></i>
+                <div class="card-right text-content">
+                    <h3 class="section-heading-sm">CERTIFICATES</h3>
+                    <div class="cert-grid-horizontal">
+                        <div class="cert-card-mini featured">
+                            <i class="fa-solid fa-award"></i>
+                            <div><strong>IIBA ECBA / CCBA / CBAP</strong><span>2026 · IIBA</span></div>
+                        </div>
+                        <div class="cert-card-mini">
+                            <i class="fa-solid fa-award"></i>
+                            <div><strong>IBM BA Professional</strong><span>2025 · IBM</span></div>
+                        </div>
+                        <div class="cert-card-mini">
+                            <i class="fa-solid fa-award"></i>
+                            <div><strong>IBM Data Analytics</strong><span>2025 · IBM</span></div>
+                        </div>
+                        <div class="cert-card-mini">
+                            <i class="fa-solid fa-language"></i>
+                            <div><strong>VSTEP Level 3 (B1)</strong><span>2024 · VSTEP</span></div>
+                        </div>
                     </div>
-                    <h3>UI/UX & PROTOTYPE</h3>
-                    <p>Figma, Visily, Stitch, User Persona, Journey Mapping</p>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon-wrap">
-                        <i class="fa-solid fa-robot"></i>
-                    </div>
-                    <h3>AI & ANALYTICS</h3>
-                    <p>n8n Workflows, OpenAI API, JSON Schema, Power BI</p>
-                </div>
-            </div>
-            <div class="tools-strip">
-                <span>Draw.io</span><span>Camunda</span><span>Jira</span><span>Confluence</span><span>Excel</span><span>EViews</span>
-            </div>
-        </section>
-
-        <!-- Card 9: CONTACT CTA -->
-        <section class="bento-card card-contact" id="contact">
-            <div class="contact-content">
-                <h2 class="contact-script">Let's work together</h2>
-                <div class="contact-details">
-                    <a href="tel:0364064438" class="contact-link">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>0364 064 438</span>
-                    </a>
-                    <a href="mailto:nguyenthithuylinh1285@gmail.com" class="contact-link">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>nguyenthithuylinh1285@gmail.com</span>
-                    </a>
-                    <span class="contact-link">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>An Khánh, Hà Nội</span>
-                    </span>
-                </div>
-
-                <!-- Certificates mini -->
-                <div class="certs-mini">
-                    <span class="cert-badge"><i class="fa-solid fa-certificate"></i> IIBA ECBA/CCBA/CBAP</span>
-                    <span class="cert-badge"><i class="fa-solid fa-certificate"></i> IBM BA Professional</span>
-                    <span class="cert-badge"><i class="fa-solid fa-certificate"></i> IBM Data Analytics</span>
-                    <span class="cert-badge"><i class="fa-solid fa-language"></i> VSTEP B1</span>
-                    <span class="cert-badge"><i class="fa-solid fa-desktop"></i> MOS</span>
                 </div>
             </div>
         </section>
 
-    </main>
+        <!-- SLIDE 7: SECOND PROJECT -->
+        <section class="slide-page" id="slide-project2">
+            <div class="editorial-card card-project-layout reverse-layout">
+                <div class="card-left flex-center bg-black-overlay">
+                    <div class="project-grid-photos">
+                        <div class="photo-icon-box"><i class="fa-solid fa-mountain"></i><span>Trekking</span></div>
+                        <div class="photo-icon-box"><i class="fa-solid fa-map"></i><span>Offline Map</span></div>
+                        <div class="photo-icon-box"><i class="fa-solid fa-tower-broadcast"></i><span>SOS Beacon</span></div>
+                        <div class="photo-icon-box"><i class="fa-solid fa-list-check"></i><span>Checklist</span></div>
+                    </div>
+                </div>
+                <div class="card-right text-content">
+                    <h2 class="section-heading-label">SECOND PROJECT</h2>
+                    <h3 class="project-title">TrekCompanion</h3>
+                    <p class="project-role">Project Leader · BA</p>
+                    <div class="editorial-body">
+                        <p>Ứng dụng Hỗ trợ Leo núi & Trekking An toàn. Dẫn dắt khảo sát pain points: mất sóng di động, lạc đường, thiếu nhu yếu phẩm, hỗ trợ khẩn cấp.</p>
+                        <p>Đề xuất giải pháp & tính năng cốt lõi: Bản đồ Offline & GPS, Cảnh báo lệch cung đường, SOS Beacon gửi tọa độ khẩn cấp, Smart Packing Checklist. Thiết kế User Persona, BPMN & ERD.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="site-footer">
-        <p>© 2026 <strong>Nguyễn Thị Thùy Linh</strong> · Business Analyst Portfolio</p>
-    </footer>
+        <!-- SLIDE 8: SKILLS -->
+        <section class="slide-page" id="slide-skills">
+            <div class="editorial-card card-skills-layout">
+                <div class="card-full-padding">
+                    <h2 class="section-heading centered-heading">SKILLS</h2>
+                    <div class="horizontal-skills-flex">
+                        <div class="skill-column">
+                            <div class="skill-header">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                <h3>PROCESS DESIGN</h3>
+                            </div>
+                            <p>BPMN 2.0, Flowchart, Swimlane, As-Is/To-Be, DFD, ERD, Camunda BPM, Draw.io</p>
+                        </div>
+                        <div class="skill-column">
+                            <div class="skill-header">
+                                <i class="fa-solid fa-file-lines"></i>
+                                <h3>DOCUMENTATION</h3>
+                            </div>
+                            <p>BRD, SRS, FRD, User Stories, Acceptance Criteria, UML Modeling, Jira, Confluence</p>
+                        </div>
+                        <div class="skill-column">
+                            <div class="skill-header">
+                                <i class="fa-brands fa-figma"></i>
+                                <h3>UI/UX & PROTOTYPE</h3>
+                            </div>
+                            <p>Figma Wireframes, Interactive Prototype, User Persona, Customer Journey, Visily, Stitch</p>
+                        </div>
+                        <div class="skill-column">
+                            <div class="skill-header">
+                                <i class="fa-solid fa-robot"></i>
+                                <h3>AI & ANALYTICS</h3>
+                            </div>
+                            <p>n8n Multi-Agent Workflow, OpenAI API, JSON Schema, Power BI Dashboard, Excel, EViews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 9: CONTACT CTA -->
+        <section class="slide-page" id="slide-contact">
+            <div class="editorial-card card-contact-layout">
+                <div class="card-left flex-center bg-diagonal-pattern">
+                    <div class="contact-script-wrap">
+                        <h2 class="contact-script-large">Let's work<br>together</h2>
+                    </div>
+                </div>
+                <div class="card-right text-content flex-center-vertical">
+                    <h2 class="section-heading">CONTACT ME</h2>
+                    <div class="contact-details-grid">
+                        <a href="tel:0364064438" class="contact-row-link">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0364 064 438</span>
+                        </a>
+                        <a href="mailto:nguyenthithuylinh1285@gmail.com" class="contact-row-link">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>nguyenthithuylinh1285@gmail.com</span>
+                        </a>
+                        <div class="contact-row-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>An Khánh, Hà Nội</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
 
     <script src="script.js"></script>
 </body>
